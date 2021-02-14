@@ -196,12 +196,6 @@ class Counter extends React.Component {
                 <div id="stats">
                 </div>
 
-                <h3>Remaining tasks:</h3>
-                <p>Great UI (animation, background image)</p>
-                <p>Push to git</p>
-                <p>Diploy to glith</p>
-                <p>allow pivoting</p>
-                <p>make chart with chart.js</p>
             </div>
         );
     }
