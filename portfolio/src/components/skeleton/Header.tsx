@@ -1,26 +1,33 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
+import './skeleton.scss'
+import logo from "../../assets/logo.svg";
 
+//src="../../assets/ARK_logo.png" 
 
 const Header = () => {
     return (
         <div className="nav">
             <div className="logo">
                 <NavLink to="/">
-                  <h4>ARK</h4>  
+                   
+                    
                 </NavLink>
-                
+                <img className="logo" src={logo} alt="logo" />
             </div>
             <div className="navContent">
                 <ul className="topNav">
                     <li className="navLinkNorm">
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/">Intro</NavLink>
                     </li>
                     <li>
                         <NavLink to="/experience">Experience</NavLink>
                     </li>
                     <li>
                         <NavLink to="/projects">Projects</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contact">Contact</NavLink>
                     </li>
                 </ul>
             </div>

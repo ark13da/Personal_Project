@@ -1,0 +1,19 @@
+.darkBack{
+    height: 200px;
+    background-color: rgb(249, 249, 249);
+}
+.lightBack{
+    height: 200px;
+    background-color: rgb(253, 253, 253);
+}
+
+.aboutContainer{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width:85%;
+    margin:auto;
+    padding:10px;
+
+}

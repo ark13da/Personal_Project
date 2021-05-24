@@ -1,0 +1,52 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:10px;
+
+    .logo{
+        padding:5px;
+        width:50px;
+    }
+
+    li{
+        list-style-type: none;
+        
+        display: inline-block;
+        margin-left: 15px;
+
+        a{
+           text-decoration: none; 
+           font-weight: 600;
+           color: navy;
+           padding:5px;
+           &:hover{
+               color:orange;
+           }
+           &:active{
+               color:orange;
+               border: 1px solid orange;
+               border-radius: 5px; 
+           }
+           &:focus{
+               color:orange;
+               border: 1px solid orange;
+               border-radius: 5px; 
+           }
+
+        }
+    } 
+
+}
+
+
+.footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+} 
+.topShortBorder{
+        width:85%;
+        margin: auto;
+        border-top: 2px solid orange;
+     }
