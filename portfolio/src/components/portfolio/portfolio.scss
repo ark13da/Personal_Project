@@ -1,10 +1,12 @@
 .darkBack{
-    height: 200px;
+    
     background-color: rgb(249, 249, 249);
+    padding:10px;
 }
 .lightBack{
-    height: 200px;
+    
     background-color: rgb(253, 253, 253);
+    padding:10px;
 }
 
 .aboutContainer{
@@ -13,7 +15,69 @@
     align-items: center;
     flex-wrap: wrap;
     width:85%;
+    height:100%;
     margin:auto;
     padding:10px;
 
 }
+
+.aboutMe{
+    max-width:400px;
+  *{
+        margin:10px;
+    }
+
+    .aboutMeHi{
+        color:orange;
+        font-size:18px;
+        font-weight: 450;
+    }
+    .aboutMeName{
+        color:navy;
+        font-size:30px;
+        font-weight: 700;
+        
+    }
+    .aboutMeTitle{
+        color:navy;
+        font-size:20px;
+        font-weight: 500;
+    }
+    .aboutMeText{
+        font-size:15px;
+    }  
+}
+
+.resumeSec{
+    padding-left:15%;
+    padding-right:15%;
+
+    @media screen and (max-width: 560px) {
+        padding-left:15px;
+        padding-right:15px;
+    }
+   
+}
+
+.hTitle{
+    color:navy;
+}
+
+.contentGrid2{
+    display:grid;
+    grid-template-columns: auto auto; 
+    
+    @media screen and (max-width: 560px) {
+    display:block;
+    }
+}
+
+.contentGrid3{
+    display:grid;
+    grid-template-columns: auto auto auto; 
+    
+    @media screen and (max-width: 560px) {
+    display:block;
+    }
+}
+

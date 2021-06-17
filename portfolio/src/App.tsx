@@ -3,8 +3,10 @@ import './App.scss';
 import Header from './components/skeleton/Header';
 import Footer from './components/skeleton/Footer';
 import Intro from './components/portfolio/Intro';
-import Experience from './components/portfolio/Experience';
+import Resume from './components/portfolio/Resume';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+
 
 function App() {
   return (
@@ -13,7 +15,7 @@ function App() {
         <Header />
         <Switch>
           <Route path="/" exact component={Intro} />
-          <Route path="/experience" exact component={Experience} />
+          <Route path="/resume" exact component={Resume} />
         </Switch>
         <Footer />
       </Router>
