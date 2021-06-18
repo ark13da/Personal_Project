@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './skeleton.scss'
 import logo from "../../assets/logo.svg";
 
-//src="../../assets/ARK_logo.png" 
+
 
 const Header = () => {
     return (
@@ -25,12 +25,6 @@ const Header = () => {
                     </li>
                     <li>
                         <NavLink to="/projects">Projects</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/hobbies">Hobbies</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="/contact">Contact</NavLink>
                     </li>
                     
                 </ul>

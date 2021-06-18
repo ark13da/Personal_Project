@@ -4,6 +4,7 @@ import Header from './components/skeleton/Header';
 import Footer from './components/skeleton/Footer';
 import Intro from './components/portfolio/Intro';
 import Resume from './components/portfolio/Resume';
+import Projects from './components/portfolio/Projects';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
@@ -11,14 +12,17 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router >
         <Header />
-        <Switch>
-          <Route path="/" exact component={Intro} />
-          <Route path="/resume" exact component={Resume} />
-        </Switch>
-        <Footer />
+        <div className="mainContent">
+          <Switch>
+            <Route path="/" exact component={Intro} />
+            <Route path="/resume" exact component={Resume} />
+            <Route path="/projects" exact component={Projects} />
+          </Switch>
+        </div>
       </Router>
+      <Footer />
     </div>
   );
 }
