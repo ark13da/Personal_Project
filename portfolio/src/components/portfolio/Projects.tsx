@@ -2,6 +2,9 @@ import React from 'react';
 import "./portfolio.scss"
 import voizyimg from "../../assets/voizy.png";
 import arcadeImg from "../../assets/arcade.png";
+import hoxImg from "../../assets/hox.png";
+import portfolio from "../../assets/portfolioImg.png";
+import recipeImg from "../../assets/recipe.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -25,13 +28,31 @@ const techSkills = [
         imgRef: arcadeImg
     },
     {
-        name: "Recipe App",
-        desc: "Allows you to add a food recipe and browse all the recipes that have been entered before.",
-        details: "The front-end of the app is written with React.js and the back-end is constructed with PHP and Symfony and utilizes Pstgres for data storage and is hosted on Heroku.",
-        resp: "I have developed the entire app myself.",
-        appRef: "https://bch-group-project-arcade-center.github.io/",
-        gitRef: "https://github.com/bch-group-project-arcade-center/bch-group-project-arcade-center.github.io",
-        imgRef: voizyimg
+        name: "Hoxhunter's hero cards",
+        desc: "Are basically cards displaying information about Hoxhunting heros.",
+        details: "The front-end of the app is written with React.js (TypeScript) and styled components. The back-end's database layer / persistance layer is done with Typeorm, GraphQL Schema and resolvers are implemented with TypeGraphQL.",
+        resp: "This was the coding exercise for fornt-end developer position (Summer job) at HoxHunt. My task was to use the data fetched by GraphQL query and design and render a set of cards to diplay information about heros.",
+        appRef: "https://github.com/ark13da/Personal_Project/tree/main/hunters-assignment_",
+        gitRef: "https://github.com/ark13da/Personal_Project/tree/main/hunters-assignment_",
+        imgRef: hoxImg
+    },
+    {
+        name: "Recipe app",
+        desc: "Is an application that accepts food recipe as input and displays the recorded recipes.",
+        details: "The front-end of the app is written with React.js and the back-end is written with PHP using Symfony and utilizing Postgres for data storage. the client side of the app is hosted on Netlifly and the server side is on Heroku.",
+        resp: "This project was a school homework to access our capabilities in using React.js and PHP(Symfony). I designed and developed the entire app.",
+        appRef: "https://goofy-bassi-6321bb.netlify.app/",
+        gitRef: "https://github.com/ark13da/BC_School_Project/tree/main/React%20basics/week5/functional_recipe",
+        imgRef: recipeImg
+    },
+    {
+        name: "Personal portfolio",
+        desc: "Is the page you are browsing right now.",
+        details: "The front-end of the app is written with React.js (TypeScript) and SCSS.",
+        resp: "I created this portfolio so it would be easier to display my capabilities.Everything you can see here, including page and logo design, is done by me.",
+        appRef: "https://github.com/ark13da/Personal_Project/tree/main/portfolio",
+        gitRef: "https://github.com/ark13da/Personal_Project/tree/main/portfolio",
+        imgRef: portfolio
     }
 ];
 
@@ -41,7 +62,7 @@ const Projects = () => {
         <div>
             {
                 techSkills.map(i => {
-                    let background: string = (techSkills.indexOf(i) % 2 == 0 ? "darkBack" : "lightBack");
+                    let background: string = (techSkills.indexOf(i) % 2 === 0 ? "darkBack" : "lightBack");
                    
                         return (
                             <div key={i.name} className={background}>
