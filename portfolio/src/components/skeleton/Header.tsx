@@ -10,21 +10,19 @@ const Header = () => {
         <div className="nav">
             <div className="logo">
                 <NavLink to="/">
-                   
-                    
+                 <img className="logo" src={logo} alt="logo" />     
                 </NavLink>
-                <img className="logo" src={logo} alt="logo" />
             </div>
             <div className="navContent">
                 <ul className="topNav">
-                    <li className="navLinkNorm">
-                        <NavLink to="/">Intro</NavLink>
-                    </li>
                     <li>
                         <NavLink to="/resume">Resume</NavLink>
                     </li>
                     <li>
                         <NavLink to="/projects">Projects</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contact">Contact</NavLink>
                     </li>
                     
                 </ul>

@@ -5,6 +5,7 @@ import Footer from './components/skeleton/Footer';
 import Intro from './components/portfolio/Intro';
 import Resume from './components/portfolio/Resume';
 import Projects from './components/portfolio/Projects';
+import Contact from './components/portfolio/Contact';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" exact component={Intro} />
             <Route path="/resume" exact component={Resume} />
             <Route path="/projects" exact component={Projects} />
+            <Route path="/contact" exact component={Contact} />
           </Switch>
         </div>
       </Router>
