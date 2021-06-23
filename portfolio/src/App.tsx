@@ -6,7 +6,7 @@ import Intro from './components/portfolio/Intro';
 import Resume from './components/portfolio/Resume';
 import Projects from './components/portfolio/Projects';
 import Contact from './components/portfolio/Contact';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 
 

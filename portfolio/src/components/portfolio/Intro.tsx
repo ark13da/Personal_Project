@@ -13,7 +13,7 @@ const Intro = () => {
                         <p className="aboutMeTitle">Full stack web developer</p>
                         <p className="aboutMeText">Welcome to my portfolio</p>
                     </div>
-                    <img className="demoImg" src={alirezaImg} alt=" img" />
+                    <img className="myImg" src={alirezaImg} alt=" img" />
                 </div>
             </div>
         </div>

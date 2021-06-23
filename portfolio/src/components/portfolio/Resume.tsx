@@ -1,10 +1,10 @@
 import React from 'react';
 import "./portfolio.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSymfony,faHtml5,faCss3,faSass,faDrupal,faPhp,faJs,faFigma,faReact,faGoogle,faNodeJs,faGit,faYarn,faNpm } from '@fortawesome/free-brands-svg-icons';
-import { faUserTie,faLaptopCode,faChartBar,faTable,faDatabase,faBuilding,faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import { faSymfony,faHtml5,faCss3,faSass,faDrupal,faPhp,faJs,faFigma,faReact,faGoogle,faNodeJs,faGit,faYarn,faNpm, faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import { faUserTie,faLaptopCode,faChartBar,faTable,faDatabase,faBuilding,faGraduationCap, faTools } from '@fortawesome/free-solid-svg-icons';
 //Technical skills: SQL, nosql,  HTML ,Css, scss, Javascript, React.js, Typescript, Node js , express js, PHP, symfony, Git, Firebase, GCP 
-const profSkills = [
+const profSkills: {ico: any, name: string}[] = [
     {
         ico: faLaptopCode,
         name: "Full stack web development"
@@ -22,7 +22,7 @@ const profSkills = [
         name: "Business intelligence development"
     },
 ];
-const techSkills = [
+const techSkills: { ico: any, name: string }[] = [
     {
         ico: faHtml5,
         name: "HTML"
@@ -82,6 +82,26 @@ const techSkills = [
     {
         ico: faYarn,
         name: "Yarn"
+    },
+    {
+        ico: faBootstrap,
+        name: "Twitter Bootsrap"
+    },
+    {
+        ico: faTools,
+        name: "D3.js"
+    },
+    {
+        ico: faTools,
+        name: "Qlik Sense"
+    },
+    {
+        ico: faTools,
+        name: "Qlik View"
+    },
+    {
+        ico: faTools,
+        name: "Power BI"
     }
 ]
 
