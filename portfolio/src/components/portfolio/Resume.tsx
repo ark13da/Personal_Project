@@ -48,6 +48,10 @@ const techSkills: { ico: any, name: string }[] = [
         name: "React.js"
     },
     {
+        ico: faTools,
+        name: "Redux"
+    },
+    {
         ico: faNodeJs,
         name: "Node.js"
     },

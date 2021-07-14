@@ -84,8 +84,10 @@
 .demoImg{
     max-width:450px;
     border-radius: 5px;
+    box-shadow: 5px 5px 15px #888888;
    @media screen and (max-width: 560px) {
     width:100%;
+    
     } 
 }
 .myImg{
