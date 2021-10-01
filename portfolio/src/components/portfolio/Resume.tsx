@@ -1,10 +1,10 @@
 import React from 'react';
-import "./portfolio.scss"
+import "./portfolio.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSymfony,faHtml5,faCss3,faSass,faDrupal,faPhp,faJs,faFigma,faReact,faGoogle,faNodeJs,faGit,faYarn,faNpm, faBootstrap } from '@fortawesome/free-brands-svg-icons';
-import { faUserTie,faLaptopCode,faChartBar,faTable,faDatabase,faBuilding,faGraduationCap, faTools } from '@fortawesome/free-solid-svg-icons';
+import { faSymfony, faHtml5, faCss3, faSass, faDrupal, faPhp, faJs, faFigma, faReact, faGoogle, faNodeJs, faGit, faYarn, faNpm, faBootstrap, faGithub, faAws, faDocker, faJenkins } from '@fortawesome/free-brands-svg-icons';
+import { faUserTie, faLaptopCode, faChartBar, faTable, faDatabase, faBuilding, faGraduationCap, faTools } from '@fortawesome/free-solid-svg-icons';
 //Technical skills: SQL, nosql,  HTML ,Css, scss, Javascript, React.js, Typescript, Node js , express js, PHP, symfony, Git, Firebase, GCP 
-const profSkills: {ico: any, name: string}[] = [
+const profSkills: { ico: any, name: string; }[] = [
     {
         ico: faLaptopCode,
         name: "Full stack web development"
@@ -22,7 +22,7 @@ const profSkills: {ico: any, name: string}[] = [
         name: "Business intelligence development"
     },
 ];
-const techSkills: { ico: any, name: string }[] = [
+const techSkills: { ico: any, name: string; }[] = [
     {
         ico: faHtml5,
         name: "HTML"
@@ -33,7 +33,7 @@ const techSkills: { ico: any, name: string }[] = [
     },
     {
         ico: faSass,
-        name: "SCSS(SASS)"
+        name: "SCSS"
     },
     {
         ico: faFigma,
@@ -41,7 +41,11 @@ const techSkills: { ico: any, name: string }[] = [
     },
     {
         ico: faJs,
-        name: "JavaScript & TypeScript"
+        name: "JavaScript"
+    },
+    {
+        ico: faTools,
+        name: "TypeScript"
     },
     {
         ico: faReact,
@@ -80,6 +84,22 @@ const techSkills: { ico: any, name: string }[] = [
         name: "Git"
     },
     {
+        ico: faGithub,
+        name: "GitHub"
+    },
+    {
+        ico: faAws,
+        name: "AWS"
+    },
+    {
+        ico: faJenkins,
+        name: "Jenkins"
+    },
+    {
+        ico: faDocker,
+        name: "Docker"
+    },
+    {
         ico: faNpm,
         name: "NPM"
     },
@@ -90,6 +110,10 @@ const techSkills: { ico: any, name: string }[] = [
     {
         ico: faBootstrap,
         name: "Twitter Bootsrap"
+    },
+    {
+        ico: faTools,
+        name: "Jest"
     },
     {
         ico: faTools,
@@ -107,7 +131,7 @@ const techSkills: { ico: any, name: string }[] = [
         ico: faTools,
         name: "Power BI"
     }
-]
+];
 
 
 const Resume = () => {
@@ -118,7 +142,7 @@ const Resume = () => {
                 <div className="contentGrid2">
                     {
                         profSkills.map(i => {
-                            return <p key={ i.name} className="contentGridItem"><FontAwesomeIcon className={"icon"} icon={i.ico} size={"lg"} /> {i.name}</p>
+                            return <p key={i.name} className="contentGridItem"><FontAwesomeIcon className={"icon"} icon={i.ico} size={"lg"} /> {i.name}</p>;
                         })
                     }
                 </div>
@@ -128,7 +152,7 @@ const Resume = () => {
                 <div className="contentGrid3">
                     {
                         techSkills.map(i => {
-                            return <p key={i.name} className="contentGridItem"><FontAwesomeIcon className={"icon"} icon={i.ico} size={"lg"} /> {i.name}</p>
+                            return <p key={i.name} className="contentGridItem"><FontAwesomeIcon className={"icon"} icon={i.ico} size={"lg"} /> {i.name}</p>;
                         })
                     }
                 </div>
